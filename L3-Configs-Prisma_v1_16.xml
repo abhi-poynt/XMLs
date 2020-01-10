@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE preferences SYSTEM
+    "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+    <root type="system">
+        <map />
+        <node name="com">
+            <map />
+            <node name="creditcall">
+                <map />
+                <node name="emvj">
+                    <map />
+                    <node name="properties">
+                        <map />
+                        <node name="Configurations">
+                            <map />
+                            <node name="CONTACT">
+                                <map />
+                                <node name="Application Configuration">
+                                    <map>
+                                        <entry key="CardHolderConfirmation" value="01" />
+                                    </map>
+                                    <node name="APP1">
+                                        <map>
+                                            <entry key="Description" value="_Mastercard Credit/Debit" />
+                                            <entry key="&lt;9F06&gt;" value="A0000000041010" />
+                                            <entry key="Selection Indicator" value="01" />
+                                            <entry key="Order" value="1" />
+                                            <entry key="&lt;9F09&gt;" value="0002" />
+                                            <!--Compare PAN and Track 2 -->
+                                            <entry key="&lt;EF43&gt;" value="01" />
+                                            <!--Use Zero Floor for Cashback -->                                            
+                                            <entry key="&lt;EF51&gt;" value="01" />
+                                            <!-- TAC – Denial -->
+                                            <entry key="&lt;E002&gt;" value="0010000000" />
+                                            <!-- TAC – Online -->
+                                            <entry key="&lt;E003&gt;" value="D84000F800" />
+                                            <!-- TAC – Default -->
+                                            <entry key="&lt;E001&gt;" value="D84000A800" />
+                                        </map>
+                                    </node>
+									<node name="APP2">
+                                        <map>
+                                            <entry key="Description" value="_Maestro" />
+                                            <entry key="&lt;9F06&gt;" value="A0000000043060" />
+                                            <entry key="Selection Indicator" value="01" />
+                                            <entry key="Order" value="2" />
+                                            <entry key="&lt;9F09&gt;" value="0002" />
+                                            <entry key="&lt;EF43&gt;" value="01" />
+                                            <entry key="&lt;EF51&gt;" value="01" />
+                                            <!-- TAC – Denial -->
+                                            <entry key="&lt;E002&gt;" value="0010000000" />
+                                            <!-- TAC – Online -->
+                                            <entry key="&lt;E003&gt;" value="D84000F800" />
+                                            <!-- TAC – Default -->
+                                            <entry key="&lt;E001&gt;" value="D84000A800" />
+                                        </map>
+                                    </node>
+                                    <node name="APP3">
+                                        <map>
+                                            <entry key="Description" value="_Visa Credit/Debit" />
+                                            <entry key="&lt;9F06&gt;" value="A0000000031010" />
+                                            <entry key="Selection Indicator" value="01" />
+                                            <entry key="Order" value="3" />
+                                            <entry key="&lt;9F09&gt;" value="008C" />
+                                            <!-- TAC – Denial -->
+                                            <entry key="&lt;E002&gt;" value="0010000000" />
+                                            <!-- TAC – Online -->
+                                            <entry key="&lt;E003&gt;" value="D84000F800" />
+                                            <!-- TAC – Default -->
+                                            <entry key="&lt;E001&gt;" value="D84000A800" />
+                                            <!-- Partial Name Selection / Indicator -->
+                                            <entry key="&lt;1F8113&gt;" value="01" />
+                                        </map>
+                                    </node>
+                                    <node name="APP4">
+                                        <map>
+                                            <entry key="Description" value="_Visa Electron" />
+                                            <entry key="&lt;9F06&gt;" value="A0000000032010" />
+                                            <entry key="Selection Indicator" value="01" />
+                                            <entry key="Order" value="5" />
+                                            <entry key="&lt;9F09&gt;" value="008C" />
+                                            <!-- TAC – Denial -->
+                                            <entry key="&lt;E002&gt;" value="0010000000" />
+                                            <!-- TAC – Online -->
+                                            <entry key="&lt;E003&gt;" value="D84000F800" />
+                                            <!-- TAC – Default -->
+                                            <entry key="&lt;E001&gt;" value="D84000A800" />
+                                            <!-- Partial Name Selection / Indicator -->
+                                            <entry key="&lt;1F8113&gt;" value="01" />
+                                        </map>
+                                    </node>
+                                    <node name="APP5">
+                                        <map>
+                                            <entry key="Description" value="_American Express" />
+                                            <entry key="&lt;9F06&gt;" value="A00000002501" />
+                                            <entry key="Selection Indicator" value="01" />
+                                            <entry key="Order" value="7" />
+                                            <entry key="&lt;9F09&gt;" value="0001" />
+                                            <entry key="&lt;E002&gt;" value="0010000000" />
+                                            <entry key="&lt;E003&gt;" value="D84000F800" />
+                                            <entry key="&lt;E001&gt;" value="D84000A800" />
+                                        </map>
+                                    </node>
+                                </node>
+                                <node name="Sequence Counter">
+                                    <map>
+                                        <entry key="&lt;9F41&gt;" value="1" />
+                                    </map>
+                                </node>
+                                <node name="Terminal Configuration">
+                                    <map>
+                                        <!-- Terminal Floor Limit -->
+                                        <entry key="&lt;9F1B&gt;" value="00000000" />
+                                        <!-- Risk management: threshold used for biased random selection-->
+                                        <entry key="&lt;E015&gt;" value="00000000" />
+                                        <entry key="&lt;E013&gt;" value="00000000" />
+                                        <entry key="&lt;E014&gt;" value="00000000" />
+                                        <!-- decline without performing TAC when online comm is unsuccessful -->
+                                        <entry key="&lt;EF50&gt;" value="00" />
+                                        <!-- Terminal Type -->
+                                        <entry key="&lt;9F35&gt;" value="22" />
+                                        <!-- Additional Terminal Capabilities -->
+                                        <entry key="&lt;9F40&gt;" value="F00090B001" />
+                                        <!-- Terminal Capabilities -->
+                                        <entry key="&lt;9F33&gt;" value="E0B8C8" />
+                                        <!-- supported languages -->
+                                        <entry key="Supported Languages" value="_en" />
+                                        <!-- Dynamic Data Authentication Data Object List (DDOL) -->
+                                        <entry key="&lt;9F49&gt;" value="9F3704" />
+                                        <!-- Terminal Country Code -->
+                                        <entry key="&lt;9F1A&gt;" value="0032" />
+                                        <!-- Transaction Currency Code -->
+                                        <entry key="&lt;5F2A&gt;" value="0032" />
+                                        <!-- Transaction Currency Exponent -->
+                                        <entry key="&lt;5F36&gt;" value="02" />
+                                        <!-- Advice supported -->
+                                        <entry key="Advice Supported" value="01" />
+                                        <!-- Force terminal risk management -->
+                                        <entry key="&lt;EF40&gt;" value="03" />
+                                        <!-- Recommended CDA processing -->
+                                        <entry key="&lt;EF49&gt;" value="01" />
+                                        <!-- Continue Transaction on Missing PIN Key and set “PIN Entry Required and PIN Pad Not Present or PIN Pad Not Working” in TVR -->
+                                        <entry key="&lt;1F8220&gt;" value="02" />
+                                        <!-- Contact to Magstripe Fallback conditions -->
+                                        <entry key="&lt;1F8122&gt;" value="009F00" />
+                                        <!-- This configuration identifier -->
+                                        <entry key="&lt;1F8131&gt;" value="_Prisma_V1.16" />
+                                        <!-- PIN bypass supported -->
+                                        <entry key="&lt;1F8114&gt;" value="00" />
+                                        <!-- kernel debug logging disabled for production terminals-->
+                                        <entry key="&lt;DFDD&gt;" value="FF" />
+                                         <!-- MSD Track Data Format-->
+                                        <entry key="&lt;DFDB&gt;" value="00" />
+                                         <!-- Data Format for Data Encryption-->
+                                        <entry key="&lt;1F8129&gt;" value="03" />
+                                        <!-- Track Data Format 2-->
+                                        <entry key="&lt;1F8133&gt;" value="01" />
+                                            <!-- Data Record Tags (EMV approval) -->
+                                        <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                        <entry key="&lt;CFFFFF01&gt;"
+                                                value="9F029F265F349F369F7C9F6E9F109F66579F379C9F39DF028F" />
+                                        <entry key="&lt;CFFFFF02&gt;" value="01" />
+                                            <!-- Data Record Tags (decline) -->
+                                        <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="AMEX">
+                                <map />
+                                <node name="Application Configuration">
+                                    <!-- AMEX -->
+                                    <node name="APP1">
+                                        <map>
+                                            <!-- Application Id-->
+                                            <entry key="&lt;9F06&gt;" value="A00000002501" />
+                                            <!-- Application Version No-->
+                                            <entry key="&lt;9F09&gt;" value="0001" />
+                                            <!-- Contactless Reader Capabilities-->
+                                            <entry key="&lt;9F6D&gt;" value="C8" />
+                                            <!-- Enhanced Contactless Reader Capabilities-->
+                                            <entry key="&lt;9F6E&gt;" value="D8B00000" />
+                                            <!-- Enhanced Contactless Reader Capabilities-->
+                                            <entry key="&lt;DF810C&gt;" value="04" />
+                                            <!-- Contactless Transaction Limit $99999.99 -->
+                                            <entry key="&lt;DFE2&gt;" value="FFFFFFFF" />
+                                            <!-- Contactless Floor Limit $0 -->
+                                            <entry key="&lt;DFE3&gt;" value="00000000" />
+                                            <!-- Contactless CVM Required Limit $12-->
+                                            <entry key="&lt;DFE4&gt;" value="FFFFFFFF" />
+                                            <!-- TAC Default -->
+                                            <entry key="&lt;DF8120&gt;" value="D84000A800" />
+                                            <!-- TAC Denial -->
+                                            <entry key="&lt;DF8121&gt;" value="0010000000" />
+                                            <!-- TAC Online -->
+                                            <entry key="&lt;DF8122&gt;" value="D84000F800" />
+											
+											<!-- Default Dynamic Reader Limits -->                                            
+                                            <!-- DRL Reader Contactless Transaction Limit -->
+                                            <entry key="&lt;DFFFDF47&gt;:01" value="004294967295" />
+                                            <!-- DRL Reader Contactless Floor Limit -->
+                                            <entry key="&lt;DFFFDF48&gt;:01" value="000000000000" />
+                                            <!-- DRL Reader CVM Required Limit -->
+                                            <entry key="&lt;DFFFDF49&gt;:01" value="004294967295" />
+											
+                                            <!-- Dynamic Reader Limits Set 6-->                                            
+                                            <!-- DRL Reader Contactless Transaction Limit -->
+                                            <entry key="&lt;DFFFDF47&gt;:02" value="004294967295" />
+                                            <!-- DRL Reader Contactless Floor Limit -->
+                                            <entry key="&lt;DFFFDF48&gt;:02" value="000000000000" />
+                                            <!-- DRL Reader CVM Required Limit -->
+                                            <entry key="&lt;DFFFDF49&gt;:02" value="004294967295" />
+											
+                                            <!-- Dynamic Reader Limits Set 11-->                                            
+                                            <!-- DRL Reader Contactless Transaction Limit -->
+                                            <entry key="&lt;DFFFDF47&gt;:03" value="004294967295" />
+                                            <!-- DRL Reader Contactless Floor Limit -->
+                                            <entry key="&lt;DFFFDF48&gt;:03" value="000000000000" />
+                                            <!-- DRL Reader CVM Required Limit -->
+                                            <entry key="&lt;DFFFDF49&gt;:03" value="004294967295" />
+											
+                                            <!-- DRL Limit Set Value -->
+                                            <entry key="&lt;DFFFDF4C&gt;:01" value="FF" />
+                                            <entry key="&lt;DFFFDF4C&gt;:02" value="06" />
+                                            <entry key="&lt;DFFFDF4C&gt;:03" value="0B" />
+                                            <entry key="&lt;DFFFDF4B&gt;" value="01" />
+                                            <!-- Data Record Tags (EMV) -->
+                                            <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F219F06849F029F039F265F2482505A5F349F129F369F099F279F34849F1E9F109F119F339F1A9F3595579F535F2A9A9C9F378F" />
+                                            <!-- Data Record Tags (EMV) decline -->
+                                            <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A8F" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                            <entry key="&lt;CFFFFF01&gt;" value="959F349F35" />
+                                            <!-- Select by AID Supported-->
+                                            <entry key="&lt;CFFFFF02&gt;" value="02" />
+                                        </map>
+                                    </node>
+                                </node>
+                                <node name="Sequence Counter">
+                                    <map>
+                                        <entry key="&lt;9F41&gt;" value="1" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="VISA">
+                                <map />
+                                <node name="Application Configuration">
+                                    <!-- VISA -->
+                                    <node name="APP1">
+                                        <map>
+                                            <entry key="&lt;9F06&gt;" value="A0000000031010" />
+                                            <entry key="&lt;9F39&gt;" value="07" />
+                                            <entry key="&lt;9F66&gt;" value="36004000" />
+                                            <entry key="&lt;DF02&gt;" value="05" />
+                                            <entry key="&lt;DF810C&gt;" value="03" />
+                                            <!-- Contactless Transaction Limit $99999.99 -->
+                                            <entry key="&lt;DFE2&gt;" value="FFFFFFFF" />
+                                            <!-- Contactless Floor Limit $0 -->
+                                            <entry key="&lt;DFE3&gt;" value="00000000" />
+                                            <!-- Contactless CVM Required Limit $12-->
+                                            <entry key="&lt;DFE4&gt;" value="FFFFFFFF" />
+                                            <entry key="&lt;DFFFDF00&gt;" value="00" />
+                                            <!-- Data Record Tags (EMV) approval  -->
+                                            <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F6C9F069F029F039F265F2482505A5F349F129F369F099F279F34849F1E9F109F119F339F1A9F3595579F535F2A9A9C9F379F7C9F6E9F669F39DF028F" />
+                                            <!-- Data Record Tags (EMV) decline -->
+                                            <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                            <entry key="&lt;CFFFFF01&gt;:01"
+                                                value="9F029C9F39DF028F" />
+                                            <entry key="&lt;CFFFFF01&gt;"
+                                                value="9F029F265F349F369F7C9F6E9F109F66579F379C9F39DF028F" />
+                                        </map>
+                                    </node>
+                                    <node name="APP2">
+                                        <map>
+                                            <entry key="&lt;9F06&gt;" value="A0000000032010" />
+                                            <entry key="&lt;9F39&gt;" value="07" />
+                                            <entry key="&lt;9F66&gt;" value="36004000" />
+                                            <entry key="&lt;DF02&gt;" value="05" />
+                                            <entry key="&lt;DF810C&gt;" value="03" />
+                                            <entry key="&lt;DFFFDF00&gt;" value="00" />
+                                            <!-- Contactless Transaction Limit $99999.99 -->
+                                            <entry key="&lt;DFE2&gt;" value="FFFFFFFF" />
+                                            <!-- Contactless Floor Limit $0 -->
+                                            <entry key="&lt;DFE3&gt;" value="00000000" />
+                                            <!-- Contactless CVM Required Limit $12-->
+                                            <entry key="&lt;DFE4&gt;" value="FFFFFFFF" />
+                                            <!-- Data Record Tags (EMV) approval  -->
+                                            <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F6C9F069F029F039F265F2482505A5F349F129F369F099F279F34849F1E9F109F119F339F1A9F3595579F535F2A9A9C9F379F7C9F6E9F669F39DF028F" />
+                                            <!-- Data Record Tags (EMV) decline -->
+                                            <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                            <entry key="&lt;CFFFFF01&gt;:01"
+                                                value="9F029C9F39DF02" />
+                                            <entry key="&lt;CFFFFF01&gt;"
+                                                value="9F029F265F349F369F7C9F6E9F109F66579F379C9F39DF02" />
+                                        </map>
+                                    </node>
+                                </node>
+                                <node name="Sequence Counter">
+                                    <map>
+                                        <entry key="&lt;9F41&gt;" value="1" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="MASTERCARD">
+                                <map />
+                                <node name="Application Configuration">
+                                    <!-- MASTERCARD -->
+                                    <node name="APP1">
+                                        <map>
+                                            <entry key="&lt;9F06&gt;" value="A0000000041010" />
+                                            <entry key="&lt;9F09&gt;" value="0002" />
+                                            <entry key="&lt;9F6D&gt;" value="0001" />
+                                            <!-- Mobile Support Indicator -->
+                                            <entry key="&lt;9F7E&gt;" value="01" />
+                                            <!-- Kernel Id -->
+                                            <entry key="&lt;DF810C&gt;" value="02" />
+                                            <!-- Byte1 of 0x9F33 -->
+                                            <entry key="&lt;DF8117&gt;" value="E0" />
+                                            <!-- CVM Capability – CVM Required - Above CVM Limit -->
+                                            <entry key="&lt;DF8118&gt;" value="60" />
+                                            <!-- CVM Capability – CVM Required - Below CVM Limit -->
+                                            <entry key="&lt;DF8119&gt;" value="08" />
+                                            <!-- Default UDOL -->
+                                            <entry key="&lt;DF811A&gt;" value="9F6A04" />
+                                            <!-- Kernel Configuration -->
+                                            <entry key="&lt;DF811B&gt;" value="30" />
+                                            <entry key="&lt;DF811C&gt;" value="0000" />
+                                            <entry key="&lt;DF811D&gt;" value="00" />
+                                            <entry key="&lt;DF811E&gt;" value="10" />
+                                            <!-- byte 3 of 0x9F33 -->
+                                            <entry key="&lt;DF811F&gt;" value="C8" />
+                                            <!-- TAC Default -->
+                                            <entry key="&lt;DF8120&gt;" value="D84000A800" />
+                                            <!-- TAC Denial -->
+                                            <entry value="0000000000" key="&lt;DF8121&gt;[&lt;009C&gt;!20]"/>
+                                            <entry value="FFFFFFFFFF" key="&lt;DF8121&gt;[&lt;009C&gt;?20]"/>
+                                           <!-- TAC Online -->
+                                            <entry key="&lt;DF8122&gt;" value="D84000F800" />
+                                            <!-- Contactless Floor Limit -->
+                                            <entry key="&lt;DF8123&gt;" value="000000000000" />
+                                            <!-- Contactless Transaction Limit - No On Device CVM-->
+                                            <entry key="&lt;DF8124&gt;" value="000999999999" />
+                                            <!-- Contactless Transaction Limit - On Device CVM -->
+                                            <entry key="&lt;DF8125&gt;" value="000999999999" />
+                                            <!-- Contactless CVM Required Limit -->
+                                            <entry key="&lt;DF8126&gt;" value="000999999997" />
+                                            <entry key="&lt;DF812C&gt;" value="00" />
+                                            <!-- Data Record Tags (EMV) approval -->
+                                            <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F219F06849F029F039F265F2482505A5F349F129F369F099F279F34849F1E9F109F119F339F1A9F3595579F535F2A9A9C9F378F" />
+                                            <!-- Data Record Tags (EMV) decline -->
+                                            <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                            <entry key="&lt;CFFFFF01&gt;"
+                                                value="509F12849F119F6D569F6B8F" />
+                                            <entry key="&lt;CFFFFF03&gt;"
+                                                value="9F42DF8104DF8102DF810BDF8115DF810EDF810F9F6EFF8101DF8104DF81058F" />
+                                            <entry key="&lt;CFFFFF04&gt;"
+                                                value="DF812ADF812BDF81159F6E8F" />
+                                            <!-- Terminal Risk Management Data -->
+                                            <entry key="&lt;9F1D&gt;" value="6C72800000000000" />
+                                        </map>
+                                    </node>
+									<node name="APP2">
+                                        <map>
+                                            <entry key="&lt;9F06&gt;" value="A0000000043060" />
+                                            <entry key="&lt;9F09&gt;" value="0002" />
+                                            <entry key="&lt;9F6D&gt;" value="0001" />
+                                            <entry key="&lt;DF810C&gt;" value="02" />
+                                            <!-- Byte1 of 0x9F33 -->
+                                            <entry key="&lt;DF8117&gt;" value="E0" />
+                                            <!-- Byte2 of 0x9F33 above cvm limit-->
+                                            <entry key="&lt;DF8118&gt;" value="60" />
+                                            <!-- Byte2 of 0x9F33 below cvm limit-->
+                                            <entry key="&lt;DF8119&gt;" value="08" />
+                                            <entry key="&lt;DF811A&gt;" value="9F6A04" />
+                                            <entry key="&lt;DF811B&gt;" value="30" />
+                                            <entry key="&lt;DF811C&gt;" value="0000" />
+                                            <entry key="&lt;DF811D&gt;" value="00" />
+                                            <entry key="&lt;DF811E&gt;" value="20" />
+                                            <!-- byte 3 of 0x9F33 -->
+                                            <entry key="&lt;DF811F&gt;" value="C8" />
+                                            <!-- TAC Default -->
+                                            <entry key="&lt;DF8120&gt;" value="D84000A800" />
+                                            <!-- TAC Denial -->
+                                            <entry value="0000800000" key="&lt;DF8121&gt;[&lt;009C&gt;!20]"/>
+                                            <entry value="FFFFFFFFFF" key="&lt;DF8121&gt;[&lt;009C&gt;?20]"/>
+                                            <!-- TAC Online -->
+                                            <entry key="&lt;DF8122&gt;" value="D84000F800" />
+                                            <!-- Contactless Floor Limit -->
+                                            <entry key="&lt;DF8123&gt;" value="000000000000" />
+                                            <!-- Contactless Transaction Limit - No On Device CVM-->
+                                            <entry key="&lt;DF8124&gt;" value="000999999999" />
+                                            <!-- Contactless Transaction Limit - On Device CVM -->
+                                            <entry key="&lt;DF8125&gt;" value="000999999999" />
+                                            <!-- Contactless CVM Required Limit -->
+                                            <entry key="&lt;DF8126&gt;" value="000999999997" />
+                                            <entry key="&lt;DF812C&gt;" value="00" />
+                                            <!-- Data Record Tags (EMV) approval -->
+                                            <entry key="&lt;CFFFFF00&gt;"
+                                                value="9F219F06849F029F039F265F2482505A5F349F129F369F099F279F34849F1E9F109F119F339F1A9F3595579F535F2A9A9C9F378F8C8D" />
+                                            <!-- Data Record Tags (EMV) decline -->
+                                            <entry key="&lt;CFFFFF50&gt;"
+                                                value="9F029F039F26829F365F349F7C9F6E9F109F1A95575F2A9A9C9F375F349F669F39DF029F339F275F245A848F8C8D" />
+                                            <!-- Data Record Tags (MSD / Magstripe / Non-EMV) -->
+                                            <entry key="&lt;CFFFFF01&gt;"
+                                                value="509F12849F119F6D569F6B8F8C8D" />
+                                            <entry key="&lt;CFFFFF03&gt;"
+                                                value="9F42DF8104DF8102DF810BDF8115DF810EDF810F9F6EFF8101DF8104DF81058F8C8D" />
+                                            <entry key="&lt;CFFFFF04&gt;"
+                                                value="DF812ADF812BDF81159F6E8F8C8D" />
+                                            <!-- Terminal Risk Management Data -->
+                                            <entry key="&lt;9F1D&gt;" value="6C72800000000000" />
+                                        </map>
+                                    </node>
+                                </node>
+                                <node name="Sequence Counter">
+                                    <map>
+                                        <entry key="&lt;9F41&gt;" value="1" />
+                                    </map>
+                                </node>
+                                <node name="Terminal Configuration">
+                                    <map>
+                                        <entry key="&lt;9F1B&gt;" value="00000000" />
+                                        <entry key="&lt;5F2A&gt;" value="0032" />
+                                        <entry key="&lt;5F36&gt;" value="02" />
+                                        <entry key="&lt;9F1A&gt;" value="0032" />
+                                        <!-- Terminal Capabilities -->
+                                        <entry key="&lt;9F33&gt;" value="E0B8C8" />
+                                        <!-- Additional Terminal Capabilities -->
+                                        <entry key="&lt;9F40&gt;" value="F00090B001" />
+                                        <!-- Terminal Type -->
+                                        <entry key="&lt;9F35&gt;" value="22" />
+                                        <!-- This configuration identifier -->
+                                        <entry key="&lt;1F8131&gt;" value="_Prisma_V1.16" />
+                                        <!-- kernel logging -->
+                                        <entry key="&lt;DFDD&gt;" value="00" />
+                                        <!-- Message hold time -->
+                                        <entry key="&lt;DF812D&gt;" value="000013" />
+                                        <entry key="&lt;DFDB&gt;" value="00" />
+                                        <entry key="&lt;1F8129&gt;" value="03" />
+                                        <entry key="&lt;1F8133&gt;" value="01" />
+                                        <!-- Continue Transaction on Missing PIN Key and set “PIN Entry Required and PIN Pad Not Present or PIN Pad Not Working” in TVR -->
+                                        <entry key="&lt;1F8220&gt;" value="02" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="MSR">
+                                <map />
+                                <node name="Terminal Configuration">
+                                    <map>
+                                        <!-- custom bin range - set all as payment cards for testing-->
+                                        <entry key="&lt;1F812F&gt;" value="06000000999999" />
+                                        <!-- This configuration identifier -->
+                                        <entry key="&lt;1F8131&gt;" value="_Prisma_V1.16" />
+                                        <!-- Remove Sentinels and LRC -->
+                                        <entry key="&lt;DFDB&gt;" value="00" />
+                                        <entry key="&lt;1F8129&gt;" value="03" />
+                                        <entry key="&lt;1F8133&gt;" value="01" />
+                                        <!-- Continue Transaction on Missing PIN Key and set “PIN Entry Required and PIN Pad Not Present or PIN Pad Not Working” in TVR -->
+                                        <entry key="&lt;1F8220&gt;" value="02" />
+                                    </map>
+                                </node>
+                            </node>
+                        </node>
+                        <node name="PublicKeys">
+                            <map />
+                            <node name="A000000003">
+                                <map>
+                                    <entry key="RID" value="A000000003" />
+                                </map>
+                                <node name="Key08">
+                                    <map>
+                                        <entry key="Index" value="08" />
+                                        <entry key="Hash"
+                                            value="20D213126955DE205ADC2FD2822BD22DE21CF9A8" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="D9FD6ED75D51D0E30664BD157023EAA1FFA871E4DA65672B863D255E81E137A51DE4F72BCC9E44ACE12127F87E263D3AF9DD9CF35CA4A7B01E907000BA85D24954C2FCA3074825DDD4C0C8F186CB020F683E02F2DEAD3969133F06F7845166ACEB57CA0FC2603445469811D293BFEFBAFAB57631B3DD91E796BF850A25012F1AE38F05AA5C4D6D03B1DC2E568612785938BBC9B3CD3A910C1DA55A5A9218ACE0F7A21287752682F15832A678D6E1ED0B" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                                <node name="Key09">
+                                    <map>
+                                        <entry key="Index" value="09" />
+                                        <entry key="Hash"
+                                            value="1FF80A40173F52D7D27E0F26A146A1C8CCB29046" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="9D912248DE0A4E39C1A7DDE3F6D2588992C1A4095AFBD1824D1BA74847F2BC4926D2EFD904B4B54954CD189A54C5D1179654F8F9B0D2AB5F0357EB642FEDA95D3912C6576945FAB897E7062CAA44A4AA06B8FE6E3DBA18AF6AE3738E30429EE9BE03427C9D64F695FA8CAB4BFE376853EA34AD1D76BFCAD15908C077FFE6DC5521ECEF5D278A96E26F57359FFAEDA19434B937F1AD999DC5C41EB11935B44C18100E857F431A4A5A6BB65114F174C2D7B59FDF237D6BB1DD0916E644D709DED56481477C75D95CDD68254615F7740EC07F330AC5D67BCD75BF23D28A140826C026DBDE971A37CD3EF9B8DF644AC385010501EFC6509D7A41" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="A000000004">
+                                <map>
+                                    <entry key="RID" value="A000000004" />
+                                </map>
+                                <node name="Key05">
+                                    <map>
+                                        <entry key="Index" value="05" />
+                                        <entry key="Hash"
+                                            value="EBFA0D5D06D8CE702DA3EAE890701D45E274C845" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="B8048ABC30C90D976336543E3FD7091C8FE4800DF820ED55E7E94813ED00555B573FECA3D84AF6131A651D66CFF4284FB13B635EDD0EE40176D8BF04B7FD1C7BACF9AC7327DFAA8AA72D10DB3B8E70B2DDD811CB4196525EA386ACC33C0D9D4575916469C4E4F53E8E1C912CC618CB22DDE7C3568E90022E6BBA770202E4522A2DD623D180E215BD1D1507FE3DC90CA310D27B3EFCCD8F83DE3052CAD1E48938C68D095AAC91B5F37E28BB49EC7ED597" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                                <node name="Key06">
+                                    <map>
+                                        <entry key="Index" value="06" />
+                                        <entry key="Hash"
+                                            value="F910A1504D5FFB793D94F3B500765E1ABCAD72D9" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="CB26FC830B43785B2BCE37C81ED334622F9622F4C89AAE641046B2353433883F307FB7C974162DA72F7A4EC75D9D657336865B8D3023D3D645667625C9A07A6B7A137CF0C64198AE38FC238006FB2603F41F4F3BB9DA1347270F2F5D8C606E420958C5F7D50A71DE30142F70DE468889B5E3A08695B938A50FC980393A9CBCE44AD2D64F630BB33AD3F5F5FD495D31F37818C1D94071342E07F1BEC2194F6035BA5DED3936500EB82DFDA6E8AFB655B1EF3D0D7EBF86B66DD9F29F6B1D324FE8B26CE38AB2013DD13F611E7A594D675C4432350EA244CC34F3873CBA06592987A1D7E852ADC22EF5A2EE28132031E48F74037E3B34AB747F" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                            </node>
+                            <node name="A000000025">
+                                <map>
+                                    <entry key="RID" value="A000000025" />
+                                </map>
+                                <node name="Key0F">
+                                    <map>
+                                        <entry key="Index" value="0F" />
+                                        <entry key="Hash"
+                                            value="A73472B3AB557493A9BC2179CC8014053B12BAB4" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="C8D5AC27A5E1FB89978C7C6479AF993AB3800EB243996FBB2AE26B67B23AC482C4B746005A51AFA7D2D83E894F591A2357B30F85B85627FF15DA12290F70F05766552BA11AD34B7109FA49DE29DCB0109670875A17EA95549E92347B948AA1F045756DE56B707E3863E59A6CBE99C1272EF65FB66CBB4CFF070F36029DD76218B21242645B51CA752AF37E70BE1A84FF31079DC0048E928883EC4FADD497A719385C2BBBEBC5A66AA5E5655D18034EC5" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                                <node name="Key10">
+                                    <map>
+                                        <entry key="Index" value="10" />
+                                        <entry key="Hash"
+                                            value="C729CF2FD262394ABC4CC173506502446AA9B9FD" />
+                                        <entry key="Exponent" value="03" />
+                                        <entry key="Modulus"
+                                            value="CF98DFEDB3D3727965EE7797723355E0751C81D2D3DF4D18EBAB9FB9D49F38C8C4A826B99DC9DEA3F01043D4BF22AC3550E2962A59639B1332156422F788B9C16D40135EFD1BA94147750575E636B6EBC618734C91C1D1BF3EDC2A46A43901668E0FFC136774080E888044F6A1E65DC9AAA8928DACBEB0DB55EA3514686C6A732CEF55EE27CF877F110652694A0E3484C855D882AE191674E25C296205BBB599455176FDD7BBC549F27BA5FE35336F7E29E68D783973199436633C67EE5A680F05160ED12D1665EC83D1997F10FD05BBDBF9433E8F797AEE3E9F02A34228ACE927ABE62B8B9281AD08D3DF5C7379685045D7BA5FCDE58637" />
+                                        <entry key="Hash Algorithm" value="01" />
+                                        <entry key="Sign Algorithm" value="01" />
+                                    </map>
+                                </node>
+                            </node>
+                        </node>
+           		    </node>
+                </node>
+            </node>
+        </node>
+    </root>
+</preferences>
